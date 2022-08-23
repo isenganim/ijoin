@@ -7,7 +7,7 @@ on:
 
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 */3 * * *'
 
 jobs:
   build:
@@ -25,6 +25,6 @@ jobs:
     - name: Commit change & Push
       run: |
           git config user.name 'isenganim'
-          git config user.email '042158404@ecampus.ut.ac.i'
+          git config user.email '042158404@ecampus.ut.ac.id'
           git commit -am "ijoin github"
           git push
