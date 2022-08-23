@@ -1,13 +1,8 @@
-name: Progress Bar CI
+name: Ijoin CronJobs
 
 on:
-  push:
-    branches: 
-      - "main"
-
-  workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: "*/5 * * * *"
 
 jobs:
   build:
