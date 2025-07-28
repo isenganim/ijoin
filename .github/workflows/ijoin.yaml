@@ -1,27 +1,27 @@
-name: Experiment
-on: 
-  schedule:
-  - cron: '0 */3 * * *'
+# name: Experiment
+# on: 
+#   schedule:
+#   - cron: '0 */3 * * *'
 
-jobs:
-  job1:
-    name: Debug
-    runs-on: ubuntu-latest
+# jobs:
+#   job1:
+#     name: Debug
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Git checkout
-      uses: actions/checkout@v2
-    - name: List files
-      run: ls
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14.x'
-    - name: Update README.md
-      run: node index.js > README.md
-    - name: Commit change & Push
-      run: |
-          git config user.name 'isenganim'
-          git config user.email '042158404@ecampus.ut.ac.id'
-          git commit -am "ijoin github"
-          git push
+#     steps:
+#     - name: Git checkout
+#       uses: actions/checkout@v2
+#     - name: List files
+#       run: ls
+#     - name: Use Node.js
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: '14.x'
+#     - name: Update README.md
+#       run: node index.js > README.md
+#     - name: Commit change & Push
+#       run: |
+#           git config user.name 'isenganim'
+#           git config user.email '042158404@ecampus.ut.ac.id'
+#           git commit -am "ijoin github"
+#           git push
